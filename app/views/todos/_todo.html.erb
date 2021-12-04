@@ -1,0 +1,11 @@
+
+<li class='list-group-item' data-sgid='<%= todo.to_sgid_param %>'>
+  <div class="row">
+    <div class="col">
+      <%= todo.title %>
+    </div>
+    <div class="col-auto">
+      <%= button_to("Удалить", '#', data: { reflex: 'click->TodoReflex#remove', id: todo.id }, class: 'btn btn-danger')%> 
+    </div>
+  </div>
+</li>

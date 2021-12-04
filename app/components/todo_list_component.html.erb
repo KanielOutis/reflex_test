@@ -1,0 +1,5 @@
+<ul id='todo-list' class='list-group' data-controller='position'>
+    <% if @value.present? %>
+      <%= render partial: 'todo', collection: @value %>
+    <% end %>
+</ul>

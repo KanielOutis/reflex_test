@@ -1,0 +1,17 @@
+
+<div class="row" data-controller="application">
+  <div class="col">
+  <label for="data-new-todo" class="visually-hidden">Serach or create Todo</label>
+  <input
+    id="data-new-todo"
+    type="text"
+    data-application-target="input"
+    data-action="debounced:keyup->application#changeText"
+    placeholder="Найти или создать..."
+    class="form-control">
+  </div>
+  <div class="col-auto">
+    <button type="submit" class="btn btn-primary mb-3" data-action="click->application#addTodo">Добавить</button>
+  </div>
+</div>
+
