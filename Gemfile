@@ -47,6 +47,10 @@ group :development do
   gem 'spring'
 end
 
+group :production do
+  gem 'redis-session-store'
+end
+
 gem 'hiredis'
 gem 'redis', '>= 4.0', require: ['redis', 'redis/connection/hiredis']
 
