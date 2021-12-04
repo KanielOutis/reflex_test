@@ -145,6 +145,9 @@ GEM
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     redis (4.5.1)
+    redis-session-store (0.11.3)
+      actionpack (>= 3, < 7)
+      redis (>= 3, < 5)
     sass-rails (6.0.0)
       sassc-rails (~> 2.1, >= 2.1.1)
     sassc (2.4.0)
@@ -212,6 +215,7 @@ DEPENDENCIES
   rack-mini-profiler (~> 2.0)
   rails (~> 6.1.4, >= 6.1.4.1)
   redis (>= 4.0)
+  redis-session-store
   sass-rails (>= 6)
   spring
   stimulus_reflex (~> 3.4)
